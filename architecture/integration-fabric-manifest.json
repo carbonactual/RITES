@@ -1,0 +1,11 @@
+{
+  "fabric_version":"1.0.0",
+  "domain":"human continuity",
+  "canonical_fabric":"carbonactual/Carbon-Actual-/architecture/integration-fabric",
+  "owned_events":["intent.created","proof.recorded","heritage.recorded"],
+  "consumes":["identity.minted","authority.granted","authority.revoked","movement.completed","value.assessed","settlement.recorded","pulse.emitted"],
+  "never_owns":["identity","authority","ledger","value-system-classification"],
+  "authority":"SealGrant",
+  "identity":"#",
+  "delivery":"at-least-once; idempotent consumers required"
+}
