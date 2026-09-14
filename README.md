@@ -13,11 +13,24 @@ RITES is a Carbon Actual product for identity, relationships, wishes, responsibi
 - **CONTINUUM** — archive, memorial, digital estate and legacy
 - **TRANSITION ENGINE** — life events that reshape continuity state
 
-## Frontend foundation
+## Ecosystem inheritance
 
-- React + Vite
-- Framer Motion for intentional state and spatial transitions
-- Lucide icons
+RITES inherits Carbon Actual / OMNII constitutional semantics and does not create parallel identity, authority, value, ledger or security primitives.
+
+- **Nothing Is Lost:** continuity records, decisions, wishes, responsibilities, transitions, failures, evidence and retired states remain attributable and recoverable.
+- **Value:** continuity value can include time, care, relationships, capacity, property, knowledge, service and opportunity; not everything is reduced to money.
+- **Pulse:** continuity events may emit feedback/value signals, but Pulse is not the underlying value or authority.
+- **Ash:** expired, retired, failed, quarantined or recoverable continuity residue remains represented rather than silently deleted.
+- **Phoenix:** governed recovery, rollback, replacement and regeneration can respond to damaged or unsafe continuity state; no unrestricted destructive autonomy.
+- **Authority:** sensitive transitions, estate actions, sealed objects and high-impact changes remain bound to explicit authority, consent, evidence and applicable review.
+
+RITES remains independently addressable as a continuity domain and connects to ABBA through an orchestration boundary rather than becoming an ABBA identity or a competing constitutional layer.
+
+## Experience and implementation model
+
+- **React + Vite**
+- **Framer Motion** for intentional state and spatial transitions
+- **Lucide** icons
 - Responsive CSS with reduced-motion support
 - Vercel SPA deployment
 
