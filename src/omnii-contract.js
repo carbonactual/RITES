@@ -1,21 +1,18 @@
-const HIGH_IMPACT = new Set(['approve','publish','execute','transfer','disclose','delete']);
+// Compatibility module retained for existing RITES imports.
+// Canonical contract semantics live in ./carbon-actual-contract.js.
 
-export function toOmniiIntent({ subjectId = null, purpose = null, action = 'read', objectId = null, metadata = {} } = {}) {
-  return { type: 'intent', product: 'RITES', subjectId, purpose, action, objectId, metadata, authorityRef: null };
-}
+export {
+  toCarbonActualIntent,
+  toCarbonActualAgentContract,
+  guardAction,
+} from './carbon-actual-contract.js';
 
-export function toOmniiAgentContract({ agentId, purpose, capabilities = [], subjectScope = [], requiredApprovals = [], sensitivityCeiling = 'restricted' } = {}) {
-  return { type: 'agent', product: 'RITES', agentId, purpose, capabilities, subjectScope, requiredApprovals, sensitivityCeiling, ownsData: false, expandsAuthority: false };
-}
+import {
+  toCarbonActualIntent,
+  toCarbonActualAgentContract,
+} from './carbon-actual-contract.js';
 
-export function guardAction({ action = 'read', authorityRef = null, consent = false, evidenceRefs = [] } = {}) {
-  const consequential = HIGH_IMPACT.has(action);
-  return {
-    allowed: !consequential || Boolean(authorityRef && (consent || action === 'approve')),
-    consequential,
-    authorityRef,
-    consent,
-    evidenceRefs,
-    reason: consequential && !authorityRef ? 'authority-required' : 'within-boundary',
-  };
-}
+// Legacy API aliases. Existing callers remain valid while Carbon Actual is
+// the canonical semantic source.
+export const toOmniiIntent = toCarbonActualIntent;
+export const toOmniiAgentContract = toCarbonActualAgentContract;
