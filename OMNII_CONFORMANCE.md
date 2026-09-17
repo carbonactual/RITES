@@ -1,10 +1,12 @@
-# OMNII Conformance Contract — RITES / NGIN continuity domain
+# Carbon Actual Conformance Contract — RITES / NGIN continuity domain
+
+**Legacy path retained for compatibility:** the filename remains `OMNII_CONFORMANCE.md` so existing links do not break. The canonical operating-spine identity is Carbon Actual.
 
 Status: CONFORMING PRODUCT BOUNDARY
-Common Layer: OMNII Common Layer v1.0.0
+Common Layer: Carbon Actual Common Layer v1.0.0
 Architectural class: domain product
 
-RITES specializes in human continuity: identity, relationships, wishes, responsibilities, transitions, archives and legacy. These are domain compositions over OMNII.
+RITES specializes in human continuity: identity, relationships, wishes, responsibilities, transitions, archives and legacy. These are domain compositions over Carbon Actual.
 
 Canonical shared contracts: Identity, Relationship, Intent, Context, Lifecycle, Resource, Rights, Authority, Consent/SEAL, Document/Evidence, Workflow, Communication, Location/Time, Availability, Value, Continuity, Audit and Interoperability.
 
