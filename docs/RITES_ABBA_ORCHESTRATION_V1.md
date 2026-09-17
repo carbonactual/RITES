@@ -2,7 +2,7 @@
 
 ## Boundary
 
-RITES remains the canonical continuity product and system of record for continuity-specific data and workflow state. ABBA is the ecosystem orchestration and intelligence layer.
+RITES remains the canonical continuity product and system of record for continuity-specific data and workflow state. ABBA is the Carbon Actual ecosystem orchestration and intelligence layer.
 
 ```text
 RITES UI / Continuum
@@ -11,7 +11,7 @@ RITES Intent + Context envelope
         ↓
 ABBA authenticated control plane
         ↓
-OMNII common-layer lookup + policy / authority checks
+Carbon Actual common-layer lookup + policy / authority checks
         ↓
 Plan / decision / execution gate
         ↓
@@ -26,7 +26,7 @@ ABBA may read authorized context, analyze, curate, recommend, compare, summarize
 
 ABBA may not issue authority, create or replace identity, infer consent, change constitutional semantics, silently publish sensitive material, transfer ownership, execute financial or legal transfers, disclose protected information, delete records, or bypass an institutional provider's security boundary.
 
-Consequential actions remain governed by the canonical action classes and require the applicable authority, consent, evidence and policy checks.
+Consequential actions remain governed by canonical action classes and require the applicable authority, consent, evidence and policy checks.
 
 ## Request envelope
 
@@ -48,7 +48,7 @@ Plan-mode requests use `execute: false`. RITES uses plan mode for normal intelli
 
 ## Idempotency and provenance
 
-Each RITES-generated ABBA request receives an idempotency key. ABBA records authenticated ingress, common-layer resolutions, plan/decision references and the authority boundary in its existing OMNII ABBA session/event structures.
+Each RITES-generated ABBA request receives an idempotency key. ABBA records authenticated ingress, Carbon Actual resolutions, plan/decision references and the authority boundary in its current session/event structures.
 
 ## Automation relationship
 
