@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { invokeAbba } from '../src/lib/abba.js';
+import { invokeAbba } from '../src/lib/abba-client.mjs';
 
 test('invokeAbba sends a governed request to the ABBA function', async () => {
   let captured = null;
@@ -14,9 +14,10 @@ test('invokeAbba sends a governed request to the ABBA function', async () => {
   };
 
   const result = await invokeAbba(client, {
+    product: 'RITES',
+    domain: 'continuity',
     objective: { query: 'prepare a continuity plan' },
-    serviceId: 'plan',
-    query: 'prepare a continuity plan',
+    execute: false,
   });
 
   assert.deepEqual(result, { accepted: true, status: 'proposed' });
@@ -36,7 +37,7 @@ test('invokeAbba propagates the server error', async () => {
   };
 
   await assert.rejects(
-    invokeAbba(client, { objective: { query: 'private request' } }),
+    invokeAbba(client, { product: 'RITES', domain: 'continuity', objective: { query: 'private request' } }),
     /unauthorized/
   );
 });
