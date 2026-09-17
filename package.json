@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "test": "node --test tests/continuum.test.mjs",
+    "test": "node --test tests/*.mjs tests/*.js",
     "preview": "vite preview"
   },
   "dependencies": {
