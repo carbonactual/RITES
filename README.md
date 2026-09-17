@@ -15,7 +15,7 @@ RITES is a Carbon Actual product for identity, relationships, wishes, responsibi
 
 ## Ecosystem inheritance
 
-RITES inherits Carbon Actual / OMNII constitutional semantics and does not create parallel identity, authority, value, ledger or security primitives.
+RITES inherits **Carbon Actual** constitutional/interoperability semantics and does not create parallel identity, authority, value, ledger or security primitives.
 
 - **Nothing Is Lost:** continuity records, decisions, wishes, responsibilities, transitions, failures, evidence and retired states remain attributable and recoverable.
 - **Value:** continuity value can include time, care, relationships, capacity, property, knowledge, service and opportunity; not everything is reduced to money.
