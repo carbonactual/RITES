@@ -1,11 +1,13 @@
 {
-  "version":"1.0.0",
+  "version":"1.1.0",
   "product":"RITES / NGIN Human Continuity Infrastructure",
   "domain":"human_continuity",
-  "inherits":["OMNII","ABBA","HAPI World","Proof","Actual","Pulse","SEAL","Value","InvertedEconomics","IO","Ash","Phoenix"],
+  "canonical_spine":"carbonactual/carbonactual",
+  "inherits":["Carbon Actual","ABBA","HAPI World","Proof","Actual","Pulse","SEAL","Value","InvertedEconomics","IO","Ash","Phoenix"],
   "scope":["identity","life","family","relationships","health","assets","wealth","business","culture","knowledge","digital_presence","emergency_readiness","legacy","continuity"],
   "route":["intent","identity","authority","continuity_request","workflow","evidence","Proof","Actual","Pulse","Value","continuity_state"],
   "authority_rule":"Continuity records do not create rights or authority that the underlying jurisdiction does not explicitly grant.",
   "free_open_rule":true,
-  "provider_rule":"External identity, storage, health and communication services are replaceable adapters."
+  "provider_rule":"External identity, storage, health and communication services are replaceable adapters.",
+  "legacy_identifier_rule":"Existing omnii-prefixed internal identifiers remain compatibility identifiers until a coordinated schema migration is completed; semantic authority belongs to Carbon Actual."
 }
