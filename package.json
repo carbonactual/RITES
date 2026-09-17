@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "test": "node --test tests/continuum.test.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",
+    "@supabase/supabase-js": "latest",
     "framer-motion": "latest",
     "lucide-react": "latest",
     "react": "latest",
