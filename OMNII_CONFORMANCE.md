@@ -10,4 +10,6 @@ Canonical shared contracts: Identity, Relationship, Intent, Context, Lifecycle, 
 
 ROOT/LIFE/STEWARD/RITE/CONTINUUM are product-level compositions. They must not redefine canonical identity, authority, graph, evidence or ledger semantics. Human consent is never inferred from AI recommendations.
 
-Provider neutrality is retained; ABBA may orchestrate within delegated authority but cannot authorize succession, transfer, disposition or other consequential continuity actions by itself.
+ABBA is the orchestration/intelligence layer used by RITES. It consumes RITES Intent/Context envelopes and common-layer references through the existing authenticated ABBA control plane. ABBA may analyze, curate, recommend and prepare, but it cannot authorize succession, transfer, disposition, disclosure, deletion or other consequential continuity actions by itself.
+
+Provider neutrality is retained; any consequential action remains subject to canonical authority, consent, evidence and policy checks.
