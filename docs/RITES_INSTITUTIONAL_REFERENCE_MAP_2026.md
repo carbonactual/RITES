@@ -11,7 +11,7 @@ RITES is a Carbon Actual continuity product, not a government authority. There i
 | Corporate/business continuity | Corporate Affairs Commission (CAC) | Company registration/status; not proof of ownership of every underlying asset |
 | Financial execution | Competent licensed financial institution / CBN or SEC-regulated provider as applicable | RITES may coordinate information and instructions; it does not silently execute transfers |
 | Religious/cultural rites | The relevant religious institution, custodian or family-authorized authority | Belief/tradition is not converted into universal legal authority |
-| Health/care records | The relevant health institution and competent regulator | RITES may carry instructions/relationships but does not infer diagnosis or medical authority |
+| Health/care records | The relevant health institution and competent regulator; MDCN for regulated medical/dental practitioners | RITES may carry instructions/relationships but does not infer diagnosis or medical authority |
 | Cemetery/mortuary | Competent local/state authority and service provider | No invented national RITES registry |
 
 ## Missing-specialist rule
