@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#07090d" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="RITES" />
+    <link rel="manifest" href="/manifest.webmanifest" />
     <meta name="description" content="RITES — a human continuity system for identity, people, wishes, responsibilities, transitions and legacy." />
     <title>RITES — Human Continuity</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+  <script id="rites-pwa-register">(()=>{if('serviceWorker'in navigator)window.addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(e=>console.warn('RITES PWA:',e)));let d=null;window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();d=e;let b=document.createElement('button');b.textContent='Install RITES';b.id='rites-install';b.style.cssText='position:fixed;right:16px;bottom:16px;z-index:99999;padding:11px 15px;border:1px solid #ffffff22;border-radius:999px;background:#07090d;color:#fff;font:700 12px system-ui;box-shadow:0 12px 32px #0007';document.body.appendChild(b);b.onclick=async()=>{if(!d)return;d.prompt();try{await d.userChoice}catch(_){}d=null;b.remove()}});window.addEventListener('appinstalled',()=>{document.getElementById('rites-install')?.remove();d=null})})();</script></body>
 </html>
